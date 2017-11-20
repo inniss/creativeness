@@ -204,9 +204,15 @@ header h1 {
 	margin: 0 0 40px 0;
 }
 /*-----------------------------------About-block------------------------------------*/
+.content .about-block .about-list {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	margin: 0 2%;
+}
 .content .about-block .about-list li {
-	margin: 0 auto 4em;
-	width: 70%;
+	margin: 2em 0;
+	width: 960px;
 	overflow: hidden;
 }
 .content .about-block .about-list li p {
@@ -243,11 +249,38 @@ header h1 {
 }
 .content .about-block .about-list li:nth-child(odd) img {
 	float: right;
-	margin: 0 0 0 4%;
 }
 .content .about-block .about-list li:nth-child(even) img {
 	float: left;
-	margin: 0 4% 0 0;
+}
+@media screen and (max-width: 960px) {
+	.content .about-block .about-list li {
+		margin: 0 0 2em 0;
+	}
+	.content .about-block .about-list li:nth-child(odd) img,
+	.content .about-block .about-list li:nth-child(even) img {
+		display: block;
+		margin: 0 auto;
+		float: none;
+		max-width: 700px;
+		animation-name: none;
+	}
+	.content .about-block .about-list li:nth-child(odd) p,
+	.content .about-block .about-list li:nth-child(even) p {
+		float: none;
+		animation-name: none;
+		width: 80%;
+		max-width: 655px;
+		margin: 0 auto;
+	}
+	.content .about-block .about-list li p.number01,
+	.content .about-block .about-list li p.number02,
+	.content .about-block .about-list li p.number03,
+	.content .about-block .about-list li p.number04,
+	.content .about-block .about-list li p.number05 {
+		background-size: 50px;
+		padding: 0 0 0 45px;
+	}
 }
 /*--------------------------------Quote-block---------------------------------------*/
 .content .quote-block {
