@@ -293,6 +293,18 @@ header h1 {
 	color: #ffffff;
 	text-align: center;
 }
+@media screen and (max-width: 960px) {
+	.content .quote-block blockquote {
+		font-size: 2.75em;
+		animation-name: none;
+	}
+}
+@media screen and (max-width: 768px) {
+	.content .quote-block blockquote {
+		font-size: 2em;
+		margin: 0 4%;
+	}
+}
 /*----------------------------Our-team-block---------------------------------------*/
 .content .team-block .team-list {
   display: flex;
