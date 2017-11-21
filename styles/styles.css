@@ -460,6 +460,7 @@ footer {
 footer .footer-menu {
 	display: flex;
 	justify-content: center;
+	flex-wrap: wrap;
 }
 footer .footer-menu li {
 	padding: 0 10px;
