@@ -386,7 +386,7 @@ header h1 {
 }
 .content .statistic-block .statistic-list li {
 	text-align: center;
-	margin: 0 20px;
+	margin: 0 2%;
 }
 .content .statistic-block .statistic-list li span {
 	color: #ffffff;
@@ -396,6 +396,14 @@ header h1 {
 }
 .content .statistic-block .statistic-list li .num-text {
 	font-size: 1.5em;
+}
+@media screen and (max-width: 768px) {
+	.content .statistic-block .statistic-list {
+		flex-direction: column;
+	}
+	.content .statistic-block .statistic-list li {
+		margin: 8px 2%;
+	}
 }
 /*----------------------------Subscribe-block---------------------------------------*/
 .content .subscribe-block {
