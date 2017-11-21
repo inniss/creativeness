@@ -410,7 +410,8 @@ header h1 {
 	background: #3e7e88;
 }
 .content .subscribe-block form {
-	text-align: center;
+	display: flex;
+	justify-content: center;
 }
 .content .subscribe-block form input {
 	height: 42px;
@@ -418,6 +419,7 @@ header h1 {
 	margin: 0 4px;
 	border: none;
 	width: 23%;
+	min-width: 276px;
 }
 .content .subscribe-block form input:focus {
 	-webkit-box-shadow: inset 0px 0px 11px 0px rgba(62,126,136,1);
@@ -433,6 +435,21 @@ header h1 {
 .content .subscribe-block form input[type=button]:hover {
 	border: #ffffff 4px solid;
 	cursor: pointer;
+}
+@media screen and (max-width: 960px) {
+	.content .subscribe-block form {
+		flex-direction: column;
+		align-items: center;
+	}
+	.content .subscribe-block form input {
+		margin: 4px;
+	}
+	.content .subscribe-block form input[type=button] {
+		min-width: 300px;
+	}
+	.content .subscribe-block form input[type=button]:hover {
+		border: #ffffff 2px solid;
+	}
 }
 /*----------------------------------------------------------------------------------*/
 /*-------------------------------------FOOTER---------------------------------------*/
