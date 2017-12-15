@@ -24,7 +24,7 @@ a:hover                        { text-decoration: none; }
     font-family: 'afta_sansregular';
     src: url('../fonts/aftasansthin.woff2') format('woff2'),
          url('../fonts/aftasansthin.woff') format('woff'),
-				 url('../fonts/aftasansthin.otf') format('woff');
+				 url('../fonts/aftasansthin.otf') format('otf');
     font-weight: normal;
     font-style: normal;
 }
